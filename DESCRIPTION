@@ -1,0 +1,31 @@
+Package: kilter
+Type: Package
+Title: Utilities for Ordered Categorical (Likert Scales) 
+Version: 0.1.0
+Date: 2024-11-20
+Authors@R:
+  person(given = "Alexander",
+         family = "Pastukhov",
+         role = c("aut", "cre"),
+         email ="pastukhov.alexander@gmail.com",
+         comment = c(ORCID = "0000-0002-8738-8591"))
+Description: Collection of utilities to work with ordered categorical data.
+    Includes functions for non-parametric bootstrapping of response proportions,
+    plotting, etc.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression:bzip2
+Depends:
+  R (>= 4.1.0)
+Imports:
+  dplyr,
+  rlang, 
+  tidyr,
+  purrr,
+  stringr,
+  ggplot2,
+  grid,
+  scales
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
