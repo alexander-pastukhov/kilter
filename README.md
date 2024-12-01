@@ -5,7 +5,7 @@ R Package with Utilities for Ordered Categorical a.k.a. Likert Scales data (kilt
 
 ## Installation
 
-```{r}
+```r
 library("devtools")
 install_github("alexander-pastukhov/kilter", dependencies=TRUE)
 ```
