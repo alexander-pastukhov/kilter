@@ -15,7 +15,7 @@ Description: Collection of utilities to work with ordered categorical data.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-LazyDataCompression:bzip2
+LazyDataCompression: bzip2
 Depends:
   R (>= 4.1.0)
 Imports:
@@ -29,3 +29,4 @@ Imports:
   scales
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+URL: https://alexander-pastukhov.github.io/kilter/
