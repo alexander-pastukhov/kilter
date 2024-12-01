@@ -2,7 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-12-01T20:16Z
+last_built: 2024-12-01T20:18Z
 urls:
   reference: https://alexander-pastukhov.github.io/kilter/reference
   article: https://alexander-pastukhov.github.io/kilter/articles
