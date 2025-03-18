@@ -33,15 +33,15 @@ dordered_logistic <- function(k, eta, c, log = FALSE) {
 ##' @importFrom purrr map_int
 ##' @examples
 ##' rordered_logistic(1, 0.5, c(-2, -1, 0, 1, 2))
-rordered_logistic <- function(n, eta, c) {
-  k <- 1:length(c + 1)
+rordered_logistic <- function(n, eta, cutpoints) {
+  k <- 1:length(cutpoints) + 1
 
   if (length(eta) == 1) {
-    p <- dordered_logistic(k, eta, c)
+    p <- dordered_logistic(k, eta, cutpoints)
     y <- sample(k, size = n, replace = TRUE, prob = p)
   } else {
     if (n > length(eta)) eta <- rep(eta, ceiling(n / length(eta)))[1:n]
-    y <- purrr::map_int(eta, ~sample(k, size = 1, prob = dordered_logistic(k, ., c)))
+    y <- purrr::map_int(eta, ~sample(k, size = 1, prob = dordered_logistic(k, ., cutpoints)))
   }
   y
 }
