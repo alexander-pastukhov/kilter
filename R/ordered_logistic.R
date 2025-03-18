@@ -34,7 +34,7 @@ dordered_logistic <- function(k, eta, c, log = FALSE) {
 ##' @examples
 ##' rordered_logistic(1, 0.5, c(-2, -1, 0, 1, 2))
 rordered_logistic <- function(n, eta, cutpoints) {
-  k <- 1:length(cutpoints) + 1
+  k <- 1:(length(cutpoints) + 1)
 
   if (length(eta) == 1) {
     p <- dordered_logistic(k, eta, cutpoints)
