@@ -35,7 +35,6 @@ geom_vstripe <- function(mapping = NULL, data = NULL, stat = "identity",
     draw_panel = function(data, panel_params, coord) {
       # Transform data using the coordinate system
       coords <- coord$transform(data, panel_params)
-      print(coords)
 
       rect_grobs <- lapply(1:nrow(coords), function(i) {
         row <- coords[i, ]

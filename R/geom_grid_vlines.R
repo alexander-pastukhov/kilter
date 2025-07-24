@@ -57,8 +57,6 @@ geom_grid_vlines <- function(mapping = NULL, data = NULL, stat = "identity",
         line_lty <- c(line_lty, rep(theme_current$panel.grid.minor$linetype %||% "solid", breaks_n))
       }
 
-      print(line_x)
-
       if (length(line_x) > 0) {
         # Transform horizontal grid positions to npc coordinates
         line_x_npc <- coord$transform(data.frame(y = line_x), panel_params)$x
